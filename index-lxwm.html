@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>溜溜云-联系我们</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/pc-common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://api.map.baidu.com/api?v=2.0&amp;ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH&amp;services=&amp;t=20170926125934"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.baiduMap.min.js"></script>
+</head>
+<style type="text/css">
+	.title1{
+		font-size: 14px;
+		font-weight: bold;
+		color: #cc5522;
+	}
+	
+	.content1{
+		font-size: 13px;
+		color: #333;
+		margin-top: 6px;
+	}
+</style>
+<body>
+	<!-- 溜溜云首页-联系我们 -->
+	<div class="index-wraper">
+		<img src="imgs/logo.jpg" alt="">
+		<ul class="right">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="index-cpjs.html">产品介绍</a>
+			</li>
+			<li>
+				<a href="index-gywm.html">关于我们</a>
+			</li>
+			<li>
+				<a href="index-lxwm.html" class="li1">联系我们</a>
+			</li>
+			<li>
+				<a href="index-xwzx.html">新闻资讯</a>
+			</li>
+			<li>
+				<a href="index-dv.html">系统登录</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 联系我们背景图 -->
+	<div class="bg-lxwm">	
+	</div>
+	<!-- 联系我们 -->
+	<div class="content-bdcp lxwm">
+		<span></span>
+		<h1>联系我们</h1>
+		<span></span>
+	</div>
+	<!-- 地址-电话-邮箱-网址 -->
+	<div class="content-dizhi">
+		<ul>
+			<li>
+				<img src="imgs/place.png" alt="">
+				<h1>地址business</h1>
+				<p>杭州萧山区金城路</p>
+				<p>1038号水务大厦B座11楼</p>
+			</li>
+			<li>
+				<img src="imgs/phone.png" alt="">
+				<h1>电话Telephone</h1>
+				<p>0571-83527851</p>
+				<p>传真 0517-83730601</p>
+			</li>
+			<li>
+				<img src="imgs/mail.png" alt="">
+				<h1>邮箱E-mail</h1>
+				<p>Support@</p>
+				<p>liuliudiqiu.net</p>
+			</li>
+			<li>
+				<img src="imgs/inter.png" alt="">
+				<h1>网址Website</h1>
+				<p>http://www.66diqiu.net</p>
+			</li>
+		</ul>
+	</div>
+	<!-- 地图导航 -->
+	<div class="content-bdcp dtdh">
+		<span></span>
+		<h1>地图导航</h1>
+		<span></span>
+	</div>
+	<div class="content-img">
+		<div id="container" style="height: 100%"></div>
+		<!-- <img src="imgs/map.png" alt=""> -->
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-box">
+		<ul>
+			<li class="left">
+				<img src="imgs/btm-logo.png" alt="">
+				<h1>溜溜云</h1>
+				<p>旅游同业分销 服务云</p>
+			</li>
+			<li class="left">
+				<h1>首页</h1>
+				<a href="">
+					<p>公司产品</p>
+				</a>
+				<a href="">
+					<p>新闻资讯</p>
+				</a>
+				<a href="">
+					<p>关于我们</p>
+				</a>
+				<a href="">
+					<p>联系我们</p>
+				</a>
+				<a href="">
+					<p>系统登录</p>
+				</a>
+			</li>
+			<li class="left">
+				<h1>产品介绍</h1>
+				<a href="">
+					<p>产品</p>
+				</a>
+				<a href="">
+					<p>服务保障</p>
+				</a>
+			</li>
+			<li class="left">
+				<h1>关于我们</h1>
+				<a href="">
+					<p>企业介绍</p>
+				</a>
+				<a href="">
+					<p>服务保障</p>
+				</a>
+			</li>
+			<li class="left">
+				<h1>联系我们</h1>
+				<a href="">
+					<p>杭州萧山区金城路</p>
+				</a>
+				<a href="">
+					<p>400-835-5166</p>
+				</a>
+			</li>
+			<li class="left">
+				<h1>集团新闻</h1>
+				<a href="">
+					<p>行业快讯</p>
+				</a>
+			</li>
+			<li class="left">
+				<h1>官方微信</h1>
+				<img src="imgs/wei.png" alt="">
+			</li>
+		</ul>
+		</div>
+		<div class="footer-ft">
+			<p>Copyright © 浙江溜溜云大数据科技有限公司 All Rights Reserved. 浙ICP备16013806号-1</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		new BaiduMap({
+				id: "container",
+				title: {
+					text: "浙江溜溜云",
+					className: "title1"
+				},
+				content: {
+					className: "content1",
+					text: ["地址：杭州萧山区金城路1038号水务大厦B座11楼", "电话：0571-83527851"]
+				},
+				point: {
+					lng: "120.2720600000",
+					lat: "30.1806500000"
+				}
+			});
+		
+	</script>
+</body>
+</html>

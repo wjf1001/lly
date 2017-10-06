@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* reset */
+
+/* 去除所有标签内外边距 */
+*,:before,:after{margin: 0;padding: 0;}
+/* 页面文本默认设置 */
+body,button, input, select, textarea{font: 12px/1.5 '微软雅黑',tahoma, Srial, helvetica, sans-serif;color: #333;}
+/* 标题去除默认大小与加粗 */
+h1, h2, h3, h4, h5, h6{font-size: 100%;font-wei: ;ght: 500;}
+em,i {font-style: normal}
+/* 去除列表默认样式 */
+ul, ol{list-style: none;}
+/* 去除默认下划线,设置颜色 */
+a{text-decoration: none;color:#333;}
+a{outline:none; star:expression(this.onFocus=this.blur());}
+/*火狐去掉按钮、连接的虚线*/
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {border: 0;outline : 0;padding:0;} 
+/* 去除输入框外轮廓高亮 */
+input,button,select,textarea{outline: none;}
+/* 可点击提示手型光标 */
+button{cursor: pointer}
+/* 禁止文本框拖动 */
+textarea{resize :none;}
+/* 图片去除底部间隙并同行内容中间对齐 */
+fieldset,img{border:0px;vertical-align:middle;}
+/* 表格折叠,设置边框样式 */
+table{border-collapse: collapse;border-spacing: 0;}
+table, td, th{border:1px solid;}
+/* 浏览器兼容中划线 */
+del{text-decoration: line-through}
+
+/* default */
+
+/*清除浮动*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clearfix {
+    zoom: 1
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* 隐藏 */
+.hide,.none {
+	display: none
+}
+/*单行文本溢出省略*/
+.odd-ellipsis{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/*多行文本溢出省略*/
+.even-ellipsis{
+	display:-webkit-box !important;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break:break-all;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+/* 谷歌浏览器输入框去除黄色 */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
